@@ -22,11 +22,11 @@ def index():
 
         return render_template("result.html", salary=salary)
 
-    
+    # Pass unique names & departments to dropdowns
     names = sorted(df['Name'].unique())
     departments = sorted(df['Department'].unique())
 
-    
+    # Decode names & departments for dropdown
     decoded_names = list(name_encoder.inverse_transform(names))
     decoded_departments = list(dept_encoder.inverse_transform(departments))
 
