@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Predicted Salary</h1>
+    <p>The predicted salary for this employee is: <strong>${{ salary | round(2) }}</strong></p>
+    <a href="/">Predict Again</a>
+</div>
+</body>
+</html>
